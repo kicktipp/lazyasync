@@ -10,5 +10,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @Configuration
 // Test runs fine with AdviceMode.PROXY
 @EnableAsync(mode = AdviceMode.ASPECTJ)
+//@EnableAsync(mode = AdviceMode.PROXY)
 public class AsyncConfig {
 }
