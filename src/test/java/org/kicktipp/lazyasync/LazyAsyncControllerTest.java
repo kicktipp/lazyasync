@@ -22,7 +22,7 @@ public class LazyAsyncControllerTest {
     @Test
     // this should not time out if @Async is working correctly
     @Timeout(1)
-    void getShouldReturnHello() {
+    void testGet() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
                 String.class)).contains("Hello");
     }

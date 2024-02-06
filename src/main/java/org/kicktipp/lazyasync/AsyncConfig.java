@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.EnableAsync;
 
-//
+// This does not help to run the test with AdviceMode.ASPECTJ
 // @Lazy(value = false)
 @Configuration
-// test run
+// Test runs fine with AdviceMode.PROXY
 @EnableAsync(mode = AdviceMode.ASPECTJ)
 public class AsyncConfig {
 }

@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class LazyAsyncController {
-
     private final AsyncService asyncService;
 
     public LazyAsyncController(AsyncService asyncService) {
